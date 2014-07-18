@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% include head.html %}
+
+</head>
+
+<body>
+	{{ content }}
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+  	<script type="text/javascript" src="js/feedback_tab.js"></script>
+
+<script type="text/javascript">
+
+$(function(){
+    $("#engineers").on("click", function(){
+    	if($("#categories").is(":visible")){
+    		$("#categories").hide();
+	        $("#engineer-products").show();
+	        $("#engineer-products").addClass("animated fadeIn");
+	        $("#backButton").show();    	}
+    });
+});
+
+$(function(){
+    $("#space").on("click", function(){
+    	if($("#categories").is(":visible")){
+    		$("#categories").hide();
+	        $("#space-products").show();
+	        $("#space-products").addClass("animated fadeIn");
+	        $("#backButton").show();    	}
+    });
+});
+
+$(function(){
+    $("#rescue").on("click", function(){
+    	if($("#categories").is(":visible")){
+    		$("#categories").hide();
+	        $("#rescue-products").show();
+	        $("#rescue-products").addClass("animated fadeIn");
+	        $("#backButton").show();    	}
+    });
+});
+
+</script>
+
+</body>
+
+<footer>
+	{% include footer.html %}
+</footer>
+
+</html>
