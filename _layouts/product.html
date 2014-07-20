@@ -13,6 +13,8 @@
 
 <script type="text/javascript">
 
+
+//On click appearance of Racer products
 $(function(){
     $("#engineers").on("click", function(){
     	if($("#categories").is(":visible")){
@@ -23,6 +25,7 @@ $(function(){
     });
 });
 
+//On click appearance of space products
 $(function(){
     $("#space").on("click", function(){
     	if($("#categories").is(":visible")){
@@ -33,12 +36,68 @@ $(function(){
     });
 });
 
+//On click appearance of Rescue products
 $(function(){
     $("#rescue").on("click", function(){
     	if($("#categories").is(":visible")){
     		$("#categories").hide();
 	        $("#rescue-products").show();
 	        $("#rescue-products").addClass("animated fadeIn");
+	        $("#backButton").show();    	}
+    });
+});
+
+//On click appearance of army products
+$(function(){
+    $("#army").on("click", function(){
+    	if($("#categories").is(":visible")){
+    		$("#categories").hide();
+	        $("#army-products").show();
+	        $("#army-products").addClass("animated fadeIn");
+	        $("#backButton").show();    	}
+    });
+});
+
+//On click appearance of city products
+$(function(){
+    $("#city").on("click", function(){
+    	if($("#categories").is(":visible")){
+    		$("#categories").hide();
+	        $("#city-products").show();
+	        $("#city-products").addClass("animated fadeIn");
+	        $("#backButton").show();    	}
+    });
+});
+
+//On click appearance of construction products
+$(function(){
+    $("#construction").on("click", function(){
+    	if($("#categories").is(":visible")){
+    		$("#categories").hide();
+	        $("#construction-products").show();
+	        $("#construction-products").addClass("animated fadeIn");
+	        $("#backButton").show();    	}
+    });
+});
+
+//On click appearance of pirate products
+$(function(){
+    $("#pirate").on("click", function(){
+    	if($("#categories").is(":visible")){
+    		$("#categories").hide();
+	        $("#pirate-products").show();
+	        $("#pirate-products").addClass("animated fadeIn");
+	        $("#backButton").show();    	}
+    });
+});
+
+//On click appearance of princess products
+$(function(){
+    $("#princess").on("click", function(){
+    	if($("#categories").is(":visible")){
+    		$("#categories").hide();
+	        $("#princess-products").show();
+	        $("#princess-products").addClass("animated fadeIn");
 	        $("#backButton").show();    	}
     });
 });
